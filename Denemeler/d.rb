@@ -12,12 +12,12 @@ puts cities
 puts '..........'
 
 %w[samsun istanbul izmir adana].each do |city|
-next if city.include? 'i'
+  next if city.include? 'i'
 
   puts city
 end
 
-puts'...........'
+puts '...........'
 
 cities_with_a = []
 
