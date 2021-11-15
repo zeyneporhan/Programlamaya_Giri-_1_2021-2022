@@ -7,13 +7,22 @@ cities.each do |city|
 
   puts city
 end
+puts cities
 
 puts '..........'
 
-cities = %w[samsun istanbul izmir adana]
-
-cities.each do |city|
-  next if city.include? 'i'
+%w[samsun istanbul izmir adana].each do |city|
+next if city.include? 'i'
 
   puts city
 end
+
+puts'...........'
+
+cities_with_a = []
+
+%w[samsun ankara artvin bursa].each do |city|
+  cities_with_a << city if city.include? 'r'
+end
+
+puts cities_with_a
